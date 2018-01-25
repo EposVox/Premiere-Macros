@@ -49,8 +49,8 @@ send +{tab}
 
 ;USING THE FUNCTION:
 ^!+f::effectsPanelType("") ;-------Types nothing in. So it CLEARS the effects panel search bar
-^!+p::effectsPanelType("presets")
-^!+w::effectsPanelType("warp")
+;^!+p::effectsPanelType("presets")
+;^!+w::effectsPanelType("warp")
 mButton::effectsPanelType("presets") ; this is super useful. Using the scroll wheel click as an assignable button...
 ;<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
 
@@ -76,7 +76,7 @@ MouseClick, left, , , 1
 sleep 5
 Send %item%
 sleep 30
-MouseMove, 34, 45, 0, R ;-----------------------moves cursor down and directly onto the effect's icon
+MouseMove, 34, 80, 0, R ;-----------------------moves cursor down and directly onto the effect's icon
 MouseGetPos, iconX, iconY
 ControlGetPos, , , www, hhh, DroverLord - Window Class10, ahk_class Premiere Pro
 MouseMove, www/3, hhh/2, 0, R ;-----------------clicks in about the CENTER of the Effects panel. This clears the displayed presets from any duplication errors
@@ -90,7 +90,6 @@ sleep 10
 MouseClick, left, , , 1 ;------------------------returns focus to the timeline.
 BlockInput, off
 }
-
 ;That's the end of the function. Now we make shortcuts to CALL that function, each with a different parameter!
 
 ;All of these refer to presets I have already created and named in Premiere
@@ -98,69 +97,9 @@ BlockInput, off
 ;ALT C, for example, will always open the CLIP menu. So I can't use that anywhere.
 ;;---I have assigned most of these to my macro keys on my keyboard, so it's just ONE KEYSTROKE to apply them!
 
-;Various Premiere Effect Presets
+;Various Premiere Effect Presets (alphabetized by command structure)
 
-^!+b::
-preset("Big Blur") 
-Return
-
-^!+d::
-preset("Drop2") 
-Return
-
-^!+v::
-preset("BW") 
-Return
-
-^!+c::
-preset("crop") 
-Return
-
-^!+j::
-preset("Warp2") 
-Return
-
-+!n::
-preset("ZOOMIN")
-Return
-
-+!d::
-preset("ZOOMOUT")
-Return
-
-;BEGIN IMPACT TRANSITIONS USING THE IMPACT TRANSITION PACK - https://www.filmimpact.net/
-^!r::
-preset("Impact Push Up") 
-Return
-
-^!E::
-preset("Impact Push Down") 
-Return
-
-^!i::
-preset("Impact Push Left") 
-Return
-
-^!o::
-preset("Impact Push Right") 
-Return
-
-^+1::
-preset("Glitch Trans")
-Return
-
-+!k::
-preset("TVP")
-Return
-
-+!l::
-preset("VHSD")
-Return
-
-+!m::
-preset("BlueCopy")
-Return
-
+;< ctrl alt shift >
 ^!+1::
 preset("Wipe-Top-Right") 
 Return
@@ -201,27 +140,174 @@ Return
 preset("Blur-Diss2") 
 Return
 
+^!+a::
+preset("CopyLeft")
+Return
+
+^!+b::
+preset("Big Blur") 
+Return
+
+^!+c::
+preset("crop") 
+Return
+
+^!+d::
+preset("Drop2") 
+Return
+
+^!+e::
+preset("CopyRight")
+Return
+
+;^!+f reserved for Label: A-roll
+
+;^!+g reserved for Label: Ad Spots
+
+^!+h::
+preset("CopyDown")
+Return
+
+;^!+i reserved for Label: B-roll
+
+;^!+j reserved for Label: Music
+
+^!+k::
+preset("blueprint")
+Return
+
+;^!+l reserved for Label: Dynamic Nested GFX
+
+^!+m::
+preset("HandShake")
+Return
+
+^!+n::
+preset("TextBounce")
+Return
+
+;^!+o reserved for "Set to Frame Size" in Premiere
+
+^!+p::
+preset("Pixel Dissolve")
+Return
+
+;^!+q reserved for Label: Old Videos
+^!+r::
+preset("Punch In")
+Return
+
+;^!+s reserved for Label: GFX
+
+^!+t::
+preset("Punch In More")
+Return
+
+;^!+U reserved for "Scale to Frame Size" in Premiere
+
+^!+v::
+preset("BW") 
+Return
+
+^!+w::
+preset("MISSFIRE") 
+Return
+
 ^!+x::
 preset("Impact Flash") 
 Return
 
-; END IMPACT TRANSITIONS
+^!+y::
+preset("GETGLITCHED") 
+Return
 
-;^!p::
-;preset("Pop In") 
-;Return
-
-;^!w::
-;preset("Pop Out") 
-;Return
+^!+z::
+preset("Ultra Key")
+Return
 
 
-;^+2::
-;preset("Constant Power")
-;Return
+;< CTRL SHIFT >
+^+1::
+preset("Glitch Trans")
+Return
 
-;+!h::
-;preset("Glitch 05")
-;Return
+^+2::
+preset("VEEHACHESS")
+Return
+
+;^+3 reserved for Nesting in Premiere
+
+;^+4 reserved for Premiere to AE
+
+;^+5 reserved for Label: Adjustment Layers
+
+;^+6 reserved for Label: Sound Effects
+
+^+7::
+preset("2GLITCH")
+Return
+
+^+8::
+preset("2VHS")
+Return
+
+; < CTRL ALT >
+^!E::
+preset("Impact Push Down") 
+Return
+
+^+f::
+preset("bad tv")
+Return
+
+^!i::
+preset("Impact Push Left") 
+Return
+
+^!o::
+preset("Impact Push Right") 
+Return
+
+^!p::
+preset("Flare") 
+Return
+
+^!r::
+preset("Impact Push Up") 
+Return
+
+^!s::
+preset("RGBSEP") 
+Return
+
+^!w::
+preset("LightLeaks") 
+Return
+
+; < SHIFT ALT >
++!d::
+preset("HOLOM")
+Return
+
++!h::
+preset("NOIRVENE")
+Return
+
++!k::
+preset("TVP")
+Return
+
++!l::
+preset("VHSD")
+Return
+
++!m::
+preset("CopyUp")
+Return
+
++!n::
+preset("CHROMO")
+Return
 
 #IfWinActive
+
