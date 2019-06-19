@@ -7,7 +7,7 @@ LED2_Function=2
 LED3_Function=4
 Character_Pacing=1
 [KEY0]
-KeyType=2
+KeyType=1
 L1_AutoRepeat=0
 L2_AutoRepeat=0
 L1_MacroMode=0
@@ -25,7 +25,7 @@ L2_MacroMode=0
 Level_1_Codes=1411121ef012f011f014
 Level_2_Codes=
 Level_1_Name=Wipe TopLeft
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY2]
 KeyType=0
 L1_AutoRepeat=0
@@ -35,7 +35,7 @@ L2_MacroMode=0
 Level_1_Codes=14111236f012f011f014
 Level_2_Codes=14112df011f014
 Level_1_Name=Wipe Up
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY3]
 KeyType=0
 L1_AutoRepeat=0
@@ -45,17 +45,17 @@ L2_MacroMode=0
 Level_1_Codes=14111216f012f011f014
 Level_2_Codes=
 Level_1_Name=Wipe TopRight
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY4]
 KeyType=0
 L1_AutoRepeat=0
 L2_AutoRepeat=0
 L1_MacroMode=0
 L2_MacroMode=0
-Level_1_Codes=
+Level_1_Codes=14114df011f014
 Level_2_Codes=
 Level_1_Name=Flare
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY5]
 KeyType=0
 L1_AutoRepeat=0
@@ -65,7 +65,7 @@ L2_MacroMode=0
 Level_1_Codes=141216f012f014
 Level_2_Codes=
 Level_1_Name=Glitch 1 Transition
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY6]
 KeyType=0
 L1_AutoRepeat=0
@@ -132,9 +132,9 @@ L1_AutoRepeat=0
 L2_AutoRepeat=0
 L1_MacroMode=0
 L2_MacroMode=0
-Level_1_Codes=
+Level_1_Codes=12111cf011f012
 Level_2_Codes=
-Level_1_Name=
+Level_1_Name=Epic Glitch
 Level_2_Name=
 [KEY13]
 KeyType=0
@@ -235,7 +235,7 @@ L2_MacroMode=0
 Level_1_Codes=14111232f012f011f014
 Level_2_Codes=
 Level_1_Name=Gaussian Blur
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY23]
 KeyType=0
 L1_AutoRepeat=0
@@ -244,8 +244,8 @@ L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Codes=14111225f012f011f014
 Level_2_Codes=141143f011f014
-Level_1_Name=Wipe Left
-Level_2_Name=Scale to Frame Size
+Level_1_Name=left
+Level_2_Name=Push Down
 [KEY24]
 KeyType=0
 L1_AutoRepeat=0
@@ -265,17 +265,17 @@ L2_MacroMode=0
 Level_1_Codes=1411122ef012f011f014
 Level_2_Codes=141144f011f014
 Level_1_Name=Wipe Right
-Level_2_Name=Push Right
+Level_2_Name=Push Down
 [KEY26]
 KeyType=0
 L1_AutoRepeat=0
 L2_AutoRepeat=0
 L1_MacroMode=0
 L2_MacroMode=0
-Level_1_Codes=
+Level_1_Codes=14111df011f014
 Level_2_Codes=
 Level_1_Name=Leaks
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY27]
 KeyType=0
 L1_AutoRepeat=0
@@ -285,7 +285,7 @@ L2_MacroMode=0
 Level_1_Codes=14123df012f014
 Level_2_Codes=
 Level_1_Name=Glitch 2 Transition
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY28]
 KeyType=0
 L1_AutoRepeat=0
@@ -295,7 +295,7 @@ L2_MacroMode=0
 Level_1_Codes=121123f011f012
 Level_2_Codes=
 Level_1_Name=HoloMatrix
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY29]
 KeyType=0
 L1_AutoRepeat=0
@@ -305,7 +305,7 @@ L2_MacroMode=0
 Level_1_Codes=14111223f012f011f014
 Level_2_Codes=
 Level_1_Name=Drop Shadow
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY30]
 KeyType=0
 L1_AutoRepeat=0
@@ -315,7 +315,7 @@ L2_MacroMode=0
 Level_1_Codes=14111235f012f011f014
 Level_2_Codes=
 Level_1_Name=Glitch Filter
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY31]
 KeyType=0
 L1_AutoRepeat=0
@@ -455,7 +455,7 @@ L2_MacroMode=0
 Level_1_Codes=14111244f012f011f014
 Level_2_Codes=1411123cf012f011f014
 Level_1_Name=Set to Frame Size
-Level_2_Name=Scale to Frame Size
+Level_2_Name=Push Down
 [KEY45]
 KeyType=0
 L1_AutoRepeat=0
@@ -465,7 +465,7 @@ L2_MacroMode=0
 Level_1_Codes=1411123df012f011f014
 Level_2_Codes=
 Level_1_Name=Wipe BottomLeft
-Level_2_Name=Scale to Frame Size
+Level_2_Name=Push Down
 [KEY46]
 KeyType=0
 L1_AutoRepeat=0
@@ -473,9 +473,9 @@ L2_AutoRepeat=0
 L1_MacroMode=0
 L2_MacroMode=0
 Level_1_Codes=14111226f012f011f014
-Level_2_Codes=14112df011f014
+Level_2_Codes=141124f011f014
 Level_1_Name=Wipe Down
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY47]
 KeyType=0
 L1_AutoRepeat=0
@@ -485,14 +485,14 @@ L2_MacroMode=0
 Level_1_Codes=1411123ef012f011f014
 Level_2_Codes=
 Level_1_Name=Wipe Bottom Right
-Level_2_Name=Push Right
+Level_2_Name=Push Down
 [KEY48]
 KeyType=0
 L1_AutoRepeat=0
 L2_AutoRepeat=0
 L1_MacroMode=0
 L2_MacroMode=0
-Level_1_Codes=
+Level_1_Codes=121142f011f012
 Level_2_Codes=
 Level_1_Name=TV Power
 Level_2_Name=
@@ -515,7 +515,7 @@ L2_MacroMode=0
 Level_1_Codes=14111bf011f014
 Level_2_Codes=
 Level_1_Name=RGB Separation
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY51]
 KeyType=0
 L1_AutoRepeat=0
@@ -525,7 +525,7 @@ L2_MacroMode=0
 Level_1_Codes=1411122af012f011f014
 Level_2_Codes=
 Level_1_Name=B&W
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY52]
 KeyType=0
 L1_AutoRepeat=0
@@ -535,7 +535,7 @@ L2_MacroMode=0
 Level_1_Codes=1411121af012f011f014
 Level_2_Codes=
 Level_1_Name=Chroma Key
-Level_2_Name=
+Level_2_Name=Push Down
 [KEY53]
 KeyType=0
 L1_AutoRepeat=0

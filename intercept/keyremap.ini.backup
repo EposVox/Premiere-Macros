@@ -1,0 +1,16 @@
+[Q]
+device=HID\VID_04D9&PID_0169&REV_0110&MI_00
+trigger=10,0,0
+combo=58,0,0|10,0,0|10,0,1|58,0,1
+[W]
+device=HID\VID_04D9&PID_0169&REV_0110&MI_00
+trigger=11,0,0
+combo=58,0,0|11,0,0|11,0,1|58,0,1
+[E]
+device=HID\VID_04D9&PID_0169&REV_0110&MI_00
+trigger=12,0,0
+combo=58,0,0|12,0,0|12,0,1|58,0,1
+[R]
+device=HID\VID_04D9&PID_0169&REV_0110&MI_00
+trigger=13,0,0
+combo=58,0,0|13,0,0|13,0,1|58,0,1
