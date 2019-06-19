@@ -19,11 +19,12 @@ SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
 #IfWinActive ahk_exe Adobe Premiere Pro.exe
 ;---EVERYTHING BELOW THIS LINE WILL ONLY WORK INSIDE PREMIERE PRO!
 
-Menu, Tray, Icon, shell32.dll, 19
+Menu, Tray, Icon, shell32.dll, 116
 ;Above changes the icon in the system tray from the usual AHK icon. Play with the numbers to pick your own.
+;icons http://help4windows.com/windows_7_shell32_dll.shtml   https://www.sysmiks.com/icon-number-of-icon-list-shell32-dll-imageres-dll/
 
 ^!f::
-ControlFocus, Edit1, ahk_class Premiere Pro
+ControlFocus, Edit7, ahk_class Premiere Pro
 Sleep, 10
 return
 
@@ -48,7 +49,8 @@ send +{tab}
 }
 
 ;USING THE FUNCTION:
-^!+f::effectsPanelType("") ;-------Types nothing in. So it CLEARS the effects panel search bar
+;^!+f::effectsPanelType("") ;-------Types nothing in. So it CLEARS the effects panel search bar
+;Disabled above, as I've assigned this to a label now.
 ;^!+p::effectsPanelType("presets")
 ;^!+w::effectsPanelType("warp")
 mButton::effectsPanelType("presets") ; this is super useful. Using the scroll wheel click as an assignable button...
@@ -66,7 +68,7 @@ BlockInput, On
 ;Sleep 10
 SetKeyDelay, 0
 MouseGetPos, xpos, ypos ;-----------------------stores the cursor's current coordinates at X%xpos% Y%ypos%
-ControlGetPos, X, Y, Width, Height, Edit1, ahk_class Premiere Pro ;;;highlights Premier's effects panel search bar (info gotten from window spy)
+ControlGetPos, X, Y, Width, Height, Edit7, ahk_class Premiere Pro ;;;highlights Premier's effects panel search bar (info gotten from window spy) (changed from Edit1 to Edit7 6/12/19)
 MouseMove, X+Width+10, Y+Height/2, 0
 sleep 5
 MouseClick, left, , , 1 ;------------------------clicks on X
@@ -285,6 +287,18 @@ preset("LightLeaks")
 Return
 
 ; < SHIFT ALT >
++!a::
+preset("Epic Glitch")
+Return
+
++!b::
+preset("csurf")
+Return
+
++!c::
+preset("RGB Text Effect")
+Return
+
 +!d::
 preset("HOLOM")
 Return
@@ -306,8 +320,29 @@ preset("CopyUp")
 Return
 
 +!n::
-preset("CHROMO")
+preset("2VHS")
 Return
+
++!o::
+preset("End Card OTN")
+Return
+
++!p::
+preset("LoudMax")
+Return
+
+;+!q reserved for running bat file for Stream Deck
+;+!r reserved for running bat file for Stream Deck
+;+!s reserved for text tool on SD Mini
+
++!t::
+preset("Glitch Edges 1")
+Return
+
++!u::
+preset("Glitch Edges 2")
+Return
+
 
 #IfWinActive
 
